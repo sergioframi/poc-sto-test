@@ -1,10 +1,16 @@
-apiVersion: backstage.io/v1alpha1
-kind: Component
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
 metadata:
-  name: sergio-guest-registration-test-20260831
-  title: Guest Registration Validation
-  description: Harmless security validation component; contains no executable actions.
+  name: sergio-guest-template-test-20260831
+  title: Guest Template Validation
+  description: Harmless no-op security validation template
 spec:
-  type: service
-  lifecycle: experimental
   owner: group:default/guests
+  type: service
+  parameters: []
+  steps:
+    - id: harmless-log
+      name: Harmless validation step
+      action: debug:log
+      input:
+        message: Guest template registration validation only
