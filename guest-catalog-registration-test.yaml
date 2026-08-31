@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: sergio-guest-registration-test-20260831
+  title: Guest Registration Validation
+  description: Harmless security validation component; contains no executable actions.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
